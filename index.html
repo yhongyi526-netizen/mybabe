@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>愛妳愛妳 | ฉันรักคุณ ฉันรักคุณ</title>
+<style>
+     body { font-family: Arial, sans-serif; background: #f0f0f0; margin: 0; padding: 0; line-height: 1.6; overflow-x: hidden; }
+    .container { max-width: 900px; margin: 20px auto; background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); position: relative; z-index: 2; }
+    h1, h2 { text-align: center; }
+    input[type="password"] { width: 100%; padding: 15px; margin: 20px 0; font-size: 18px; border-radius: 10px; border: 2px solid #ccc; }
+    button { padding: 12px 25px; font-size: 16px; border: none; border-radius: 10px; background-color: #e91e63; color: white; cursor: pointer; margin-bottom: 20px; }
+    button:hover { background-color: #d81b60; }
+    .hidden-content { display: none; }
+    .section { display: none; margin: 30px 0; padding: 20px; border-top: 2px dashed #ccc; animation: fadeIn 1s ease-in; position: relative; z-index: 2; }
+    @keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+    img { max-width: 100%; margin: 15px 0; border-radius: 10px; }
+    .zh { color: #333; font-weight: bold; }
+    .th { color: #555; font-style: italic; }
+    /* 愛心特效 */
+    .heart { position: fixed; color: #e91e63; font-size: 20px; opacity: 0.8; pointer-events: none; z-index: 1; animation-name: floatHeart; animation-iteration-count: infinite; }
+    @keyframes floatHeart { 0% { transform: translateY(0) scale(1); opacity:1; } 50% { transform: translateY(-30px) scale(1.2); opacity:0.8; } 100% { transform: translateY(-600px) scale(0.8); opacity:0; } }
+    /* 倒數計時樣式 */
+    #countdown { font-size: 24px; font-weight: bold; text-align: center; margin-bottom: 20px; color: #e91e63; }
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>🔒 寶寶聖誕節快樂 | สุขสันต์วันคริสต์มาสที่รัก!</h1>
+    <div id="countdown">倒數計時: 00天 00時 00分 00秒</div>
+    <input type="password" id="secretKey" placeholder="輸入密語 / กรอกรหัสลับ">
+    <button onclick="checkPassword()">解鎖 / ปลดล็อก</button>
+
+    <div id="content" class="hidden-content">
+        <!-- 超長內容開始 -->
+<!-- 以下示範前5段，你會看到結構相同，實際複製我會生成50段 -->
+<div class="section" id="section1">
+  <h2 class="zh">寶寶不要給我想太多了</h2>
+  <h2 class="th">ที่รัก อย่ากังวลมากเกินไปเลย</h2>
+  <p class="zh">我不想妳想太多呀，可能我們因為翻譯跟dc的關係有時候會有誤會，但我說我愛妳，我不會對妳生氣，也不會想妳以外的東西，我只想妳</p>
+  <p class="th">ฉันไม่อยากให้คุณคิดมากไป อาจเป็นเพราะเราใช้ Discord และภาษาต่างกัน ทำให้เกิดความเข้าใจผิดบ้าง แต่ฉันแค่อยากบอกคุณว่า ฉันรักคุณ ฉันจะไม่โกรธคุณ คุณคือสิ่งเดียวที่อยู่ในใจฉัน ฉันแค่อยากอยู่กับคุณ</p>
+  <img src="https://tse1.mm.bing.net/th/id/OIP.karzw7jvyE7pH8R2mjPzlwHaGU?rs=1&pid=ImgDetMain&o=7&rm=3" alt="圖片1">
+</div>
+<div class="section" id="section2">
+  <h2 class="zh">今天是聖誕節</h2>
+  <h2 class="th">วันนี้คือวันคริสต์มาส</h2>
+  <p class="zh">第一次一起的聖誕節我們不能一起過，我想送妳禮物但我真的真的沒錢了哈哈哈，我想了好久就做這個給妳吧，希望妳會開心</p>
+  <p class="th">เราไม่ได้ใช้เวลาคริสต์มาสแรกด้วยกัน และฉันอยากจะให้ของขวัญคุณ แต่ฉันไม่มีเงินเลยจริงๆ ฮ่าๆ ฉันคิดอยู่นานมากและตัดสินใจทำสิ่งนี้ให้คุณ ฉันหวังว่ามันจะทำให้คุณมีความสุข</p>
+  <img src="https://p2.bahamut.com.tw/B/2KU/23/1279a3c7cfd9a8f75ec1fa606e1o5df5.JPG">
+</div>
+<div class="section" id="section3">
+  <h2 class="zh">我真的真的超級超級超級超級超級超級超級愛妳</h2>
+  <h2 class="th">ฉันรักคุณมาก! จริงๆ นะ ฉันรักคุณมาก!</h2>
+  <p class="zh">我準備了這個小小的秘密頁面，希望你喜歡。</p>
+  <p class="th">ฉันเตรียมหน้าเนื้อหาลับเล็กๆ นี้ หวังว่าคุณจะชอบ</p>
+  <img src="https://tse3.mm.bing.net/th/id/OIP.1DYceo8MdwjRyKK_yWAkTAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="圖片3">
+</div>
+<div class="section" id="section4">
+  <h2 class="zh">寶寶沒事吧</h2>
+  <h2 class="th">ย่อหน้า4 - ข้อความอบอุ่น</h2>
+  <p class="zh">或許我們真的需要休息休息，我是真的真的愛妳，我不覺得每天跟妳打電話很累，我們每天聊天有一些摩擦，妳可能真的不太舒服，我不想妳難受，我也不知道怎麼解決，妳想妳許要我的時候我一直都在我會陪妳在妳需要的時候，我一直都在</p>
+  <p class="th">บางทีเราอาจต้องการพักสักหน่อยจริงๆ ฉันรักคุณจริงๆ ฉันไม่รู้สึกเหนื่อยเลยที่ต้องโทรหาคุณทุกวัน เราอาจมีความเห็นไม่ตรงกันบ้างในระหว่างการคุยกันทุกวัน และคุณอาจจะไม่สบาย ฉันไม่อยากให้คุณเสียใจ และฉันก็ไม่รู้ว่าจะแก้ไขอย่างไร ฉันจะอยู่เคียงข้างคุณเสมอ ไม่ว่าเมื่อไหร่ที่คุณต้องการหรือต้องการความช่วยเหลือจากฉัน ฉันจะอยู่เคียงข้างคุณเสมอเมื่อคุณต้องการฉัน</p>
+  <img src="https://memeprod.ap-south-1.linodeobjects.com/user-maker/bdd8b0f3c6653196ac7ebd47f2cc9220.gif" alt="圖片4">
+</div>
+<div class="section" id="section5">
+  <h2 class="zh">再三天呀寶寶</h2>
+  <h2 class="th">ที่รัก เหลืออีกสามวันนะ</h2>
+  <p class="zh">我認真認真期待可以跟妳一起生活，跟妳真的真的在一起，可能因為我們不是現實生活中接觸，所以難免有些誤會解不開，有些想表達的表達不清楚，我期待未來真的真的可以與妳一起生活，愛妳我的寶寶</p>
+  <p class="th">ฉันตั้งตารอที่จะใช้ชีวิตร่วมกับคุณ และเป็นคู่แท้ของคุณ บางทีอาจเป็นเพราะเรายังไม่เคยเจอกันในชีวิตจริง จึงมีบางเรื่องที่เข้าใจผิดกันไม่ได้ และมีบางสิ่งที่ฉันอยากจะพูดแต่พูดออกมาไม่ชัดเจน ฉันตั้งตารอที่จะใช้ชีวิตที่เหลืออยู่กับคุณในอนาคต ฉันรักคุณ ที่รัก</p>
+  <img src="https://www.fujitv.com/wp-content/uploads/2022/07/a777e868fdaed6b18a8ddbcd4cd46a56.jpg" alt="圖片5">
+</div>
+</div>
+</div>
+<button id="nextButton" onclick="showNextSection()">下一段 / ถัดไป</button>
+<button id="lastButton" onclick="triggerFinalEffect()">loveu babe dont press please,if u want to press after u see it finish   / เด็กทารกที่น่ารักที่สุด</button>
+
+<script>
+function triggerFinalEffect(){
+    // 彈出跳動文字
+    const message = document.createElement('div');
+    message.textContent = "不要不開心呀寶寶，我說過我會陪妳，希望妳每天開開心心อย่าเศร้าเลยที่รัก ฉันบอกแล้วว่าฉันจะอยู่เคียงข้างเธอเสมอ ฉันหวังว่าเธอจะมีความสุขทุกวันนะ"
+    message.style.position = "fixed";
+    message.style.top = "40%";
+    message.style.left = "50%";
+    message.style.transform = "translate(-50%, -50%)";
+    message.style.fontSize = "50px";
+    message.style.color = "#e91e63";
+    message.style.fontWeight = "bold";
+    message.style.zIndex = 9999;
+    message.style.animation = "pop 1s ease-in-out infinite alternate";
+    document.body.appendChild(message);
+
+    // 定義跳動動畫
+    const style = document.createElement('style');
+    style.innerHTML = `
+        @keyframes pop {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.2) rotate(-10deg); }
+            100% { transform: translate(-50%, -50%) scale(1) rotate(10deg); }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // 彩帶 (confetti) 特效
+    for(let i=0;i<150;i++){
+        const confetti = document.createElement('div');
+        confetti.textContent = ["🎊","🎉","💖","💗","❤️"][Math.floor(Math.random()*5)];
+        confetti.style.position = "fixed";
+        confetti.style.left = Math.random()*100 + "vw";
+        confetti.style.top = "-20px";
+        confetti.style.fontSize = (20+Math.random()*30)+"px";
+        confetti.style.zIndex = 9999;
+        confetti.style.transform = `rotate(${Math.random()*360}deg)`;
+        confetti.style.animation = `fall ${3+Math.random()*3}s linear forwards`;
+        document.body.appendChild(confetti);
+
+        setTimeout(()=>{
+            confetti.remove();
+        }, 6000);
+    }
+
+    // 彩帶下落動畫
+    const confettiStyle = document.createElement('style');
+    confettiStyle.innerHTML = `
+        @keyframes fall {
+            0% { top: -20px; opacity: 1; }
+            100% { top: 100vh; opacity: 0; }
+        }
+    `;
+    document.head.appendChild(confettiStyle);
+}
+</script>
+
+
+<script>
+let currentSection = 0;
+const totalSections = 50; // 50段
+
+function checkPassword() {
+    const input = document.getElementById('secretKey').value.trim();
+    const password = "三小啦我真的真的真的愛妳呦"; // 你的密語
+    if(input === password){
+        document.getElementById('content').style.display = 'block';
+        alert("解鎖成功！可以逐段查看內容 | ปลดล็อกสำเร็จ! ดูเนื้อหาได้ทีละส่วนแล้ว");
+        showNextSection();
+    } else {
+        alert("密語錯誤！請再試一次 | รหัสลับผิด! กรุณาลองอีกครั้ง");
+    }
+}
+
+function showNextSection(){
+    currentSection++;
+    if(currentSection <= totalSections){
+        document.getElementById('section' + currentSection).style.display = 'block';
+        if(currentSection === totalSections){
+            document.getElementById('nextButton').style.display = 'none';
+        }
+    }
+}
+ function createHeart(){
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.style.left = Math.random()*100 + "vw";
+        heart.style.fontSize = (10+Math.random()*20) + "px";
+        heart.style.animationDuration = (4+Math.random()*3) + "s";
+        heart.textContent = "💖";
+        document.body.appendChild(heart);
+        setTimeout(()=>{ heart.remove(); }, 7000);
+    }
+    setInterval(createHeart, 50); // 每0.3秒生成一個愛心
+  function updateCountdown() {
+        const now = new Date();
+        const day = now.getDay();
+        const hour = now.getHours();
+        let daysUntilSunday = (7 - day) % 7;
+        let target = new Date(now);
+        target.setDate(now.getDate() + daysUntilSunday);
+        target.setHours(7,0,0,0);
+
+        if(now > target) target.setDate(target.getDate() + 7);
+
+        const diff = target - now;
+        const d = Math.floor(diff/(1000*60*60*24));
+        const h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+        const m = Math.floor((diff%(1000*60*60))/(1000*60));
+        const s = Math.floor((diff%(1000*60))/1000);
+
+        document.getElementById("countdown").textContent = `倒數計時: ${d}天 ${h}時 ${m}分 ${s}秒`;
+    }
+    setInterval(updateCountdown, 1000);
+</script>
+</body>
+</html>
+
+
